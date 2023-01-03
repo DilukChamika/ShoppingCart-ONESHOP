@@ -1,0 +1,133 @@
+#storeHead{
+    padding: 16px;
+    background: linear-gradient(to bottom, #3500D3, #190061);
+    color: white;
+    text-align: center;
+}
+
+#storeHead-admin{
+    padding: 16px;
+    background: linear-gradient(to bottom, #f78c40, #0dd11d);
+    color: white;
+    text-align: center;
+}
+
+#headerText{
+    text-shadow: 2px 2px 8px #FF0000;
+}
+
+.btn-primary{
+     background: linear-gradient(to left, #190061, #3500D3); 
+     border: 1px solid white;
+}
+
+
+.bg-primary-admin{
+    background: linear-gradient(to top, #d10dd1, #fa3463); 
+}
+
+.bg-primary{
+    background: linear-gradient(to top, #3500D3, blue); 
+}
+
+
+ .nav-item>a:hover {
+            color: white;
+            background-color: black;
+            border-radius: 6px;
+        }
+ .active {
+            color: white;
+            background: linear-gradient(to bottom, #3500D3, black);   
+            border-radius: 6px;
+        }
+
+.nav-item>a{
+    padding: 5px;
+    color: black;
+
+}
+
+#stores{
+    
+    background: linear-gradient(to bottom, black, #3500D3); 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#stores-admin{
+    background: linear-gradient(to bottom, pink, #3500D3); 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.store{
+    color: white;
+    height: 96%;
+    border: 2px solid yellow;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background: linear-gradient(to bottom, #190061, #0C0032); 
+}
+
+.Stimages{
+    width: 100px;
+    height: auto;
+}
+
+.Stbutton{
+    background: linear-gradient(to bottom, blue, #190061); 
+    border-radius: 6px;
+    border: 2px solid white;
+    color: yellow;
+    height: 40px;
+}
+
+
+
+
+
+
+#footer{
+    padding: 16px;
+    background: linear-gradient(to bottom, #190061, blue); 
+    color: white;
+    
+}
+
+#cart{
+        background: linear-gradient(to bottom, #190061, blue); 
+
+}
+
+.cartitem{
+     color: white;
+    height: 96%;
+    border: 5px solid white;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background: linear-gradient(to bottom, #190061, #0C0032); 
+
+}
+
+.paybutton{
+    background: linear-gradient(to bottom, blue, #190061); 
+    border-radius: 6px;
+    border: 2px solid white;
+    color: yellow;
+    height: 40px;
+    width: 120px;
+}
+.rmvbutton{
+    background: linear-gradient(to bottom, blue, #190061); 
+    border-radius: 6px;
+    border: 2px solid white;
+    color: red;
+    height: 40px;
+}
