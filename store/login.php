@@ -55,7 +55,7 @@ if($_POST){
   <label for="password">Password:</label><br>
   <input type="password" id="pword" name="password" ><br>
   <input type="checkbox" onclick="showPass()">Show Password <br><br><br>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Login">
 </form> 
 <a href="createuser.php">Create New Account </a>
 </body>
