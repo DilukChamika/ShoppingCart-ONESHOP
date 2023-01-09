@@ -34,7 +34,7 @@ if(!$_SESSION['auth']){
 <div class="container-fluid">
     <div class="row" id="storeHead-admin">
         <div class="col-2 col-sm-2">
-                  <img src="../../Assets/icon.png" alt="Company Logo" style="width: 64px; height: 64px;" class="companyLogo">
+                  <img src="../../Assets/icon.png" alt="Company Logo" style="width: 52px; height: 52px;" class="companyLogo">
         </div>
         <div class="col-8 col-sm-8">
                   <h1 id="headerText">Administrator  <span><b>Manage User</b></span></h1>
