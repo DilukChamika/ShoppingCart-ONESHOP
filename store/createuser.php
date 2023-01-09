@@ -34,7 +34,7 @@
 
 				$sql = "INSERT INTO `users` (username, password, role, avatarSrc) VALUES ('$username', '$password', 'user', '$new_img_name') ";
 				if ($conn->query($sql) === TRUE) {
-			      echo "<script> alert ('New user created successfully'); ";
+			      echo "<script> alert ('New user created successfully'); </script>";
 			    } else {
 			      echo "Error: " . $sql . "<br>" . $conn->error;
 			    }
@@ -46,7 +46,7 @@
 				header("Location: createuser.php?error=$err_msg");
 			}
 		}else{
-			echo "Error!";
+			echo "<script> alert('Error!'); </script>";
 		}
 
 	}
@@ -64,15 +64,15 @@
   		<br><img src=".\Assets\icon.png"/><br><br><br>
 	
 		<form action="#" method="POST" enctype="multipart/form-data">
-			<label for="username">Username:</label><br>
+			<label for="username" style="font-size:18px";>Username:</label><br>
 	    	<input type="text" id="username" name="username" required><br><br>
-	    	<label for="avatar">Profile Picture:</label><br>
-	    	<input type="file" name="avatar" required><br><br>
-	    	<label for="password">Password:</label><br>
+	    	<label for="avatar" style="font-size:18px";>Profile Picture:</label><br><br>
+	    	<input type="file" name="avatar" style="font-size:16px"; required><br><br>
+	    	<label for="password" style="font-size:18px";>Password:</label><br>
 	    	<input type="password" id="pword" name="password" required><br>
-	    	<input type="checkbox" onclick="showPass()">Show Password <br><br>
+	    	<input type="checkbox" onclick="showPass()" style="font-size:18px";> Show Password <br><br>
 	    	<input type="submit" value="Submit" id="subBtn"><br><br>
-			<a href="login.php"><input type="button" value="log In" id="logBtn"></a>
+			<a href="login.php"><input type="button" value="Log In" id="logBtn"></a>
 		</form>
 	</div>
 </center>
