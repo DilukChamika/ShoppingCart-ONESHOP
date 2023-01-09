@@ -38,7 +38,7 @@ if(!$_SESSION['auth']){
                   <img src="Assets/icon.png" alt="Company Logo" style="width: 52px; height: 52px;" class="companyLogo">
         </div>
         <div class="col-8 col-sm-8">
-                  <h1 id="headerText">ADMINISTRATOR - <b>Product Store</b></h1>
+        <h1 class="headerText"><span><b>Admin - Update/Delete Items</b></span></h1>
         </div>
         <div class="col-2 col-sm-2">
             <?php
@@ -53,7 +53,7 @@ if(!$_SESSION['auth']){
             mysqli_close($conn);
 
             ?>
-                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='logout.php'> <small><u>LogOut</u></small></a> 
+                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
         </div>
     </div>
 
@@ -78,7 +78,7 @@ if(!$_SESSION['auth']){
                 </div>
                 <form class="d-flex" method="POST" action="index.php">
                     <input class="form-control me-2" id="userSearch" type="text" name="keyw" placeholder="Search">
-                    <button  type="submit" class="btn btn-primary" >Search</button>
+                    <button  type="submit" class="btn btn-primary" id="adminsearchbtn">Search</button>
                 </form>
             </div>
         </nav>
@@ -153,13 +153,13 @@ if(!$_SESSION['auth']){
                     echo "<div class='cartitem' "."id=".$productID.">";
                     echo "<h3 class="."title".">" .$row["productName"] ."</h3>";
                     echo " <img src=$row[productImgSrc] height='120' width='auto'>";
-                    echo "<p class="."category".">" .$row["productCategory"] ."</p>";
+                    echo "<p style='color:#0577FF'class="."category"."><b>" .$row["productCategory"] ."</b></p>";
                     echo "<p>" .$row["productDiscription"] . "</p>";
-                    echo "<p class="."price".">LKR ".$row["productPrice"]. ".00</p>";
+                    echo "<p class="."price"."><b>LKR ".$row["productPrice"]. ".00</b></p>";
 
                     echo "<button  onClick= "."updateItem($productID)"." class="."Stbutton"." type="."submit"."><b>Update</b></button>";
                     echo "  ";
-                    echo "<button  onClick= "."deleteItem($productID)"." class="."Stbutton"." type="."submit"."><b>Delete</b></button>";
+                    echo "<button  onClick= "."deleteItem($productID)"." class="."rmvbutton"." type="."submit"."><b>Delete</b></button>";
  
                     echo "</div>";
                     echo "</div>";    
@@ -196,7 +196,7 @@ if(!$_SESSION['auth']){
                             }
                         });
 
-                        document.getElementById(pID).innerHTML = "Successfully Deleted!";
+                        document.getElementById(pID).innerHTML = "<b>Successfully Deleted!</b>";
 
                      }
 
