@@ -88,10 +88,6 @@
 }
 
 
-
-
-
-
 #footer{
     padding: 16px;
     background: linear-gradient(to bottom, #190061, blue); 
@@ -130,4 +126,68 @@
     border: 2px solid white;
     color: red;
     height: 40px;
+}
+
+/* login and create user styles */
+
+.home {
+  background-image: url("../Assets/bgpic.jpg");
+  background-size: cover;
+}
+#username {
+  width: 400px;
+  height: 40px;
+  background-color: #d3f1f3;
+  border: none;
+}
+#pword {
+  width: 400px;
+  height: 40px;
+  background-color: #d3f1f3;
+  border: none;
+}
+#subBtn {
+  background-color: #153cfb;
+  color: #ffffff;
+  width: 400px;
+  height: 40px;
+  border-color: #153cfb;
+}
+#createBtn {
+  background-color: #ffffff;
+  color: #153cfb;
+  width: 400px;
+  height: 40px;
+  border-color: #153cfb;
+}
+#logBtn {
+  background-color: #ffffff;
+  color: #153cfb;
+  width: 400px;
+  height: 40px;
+  border-color: #153cfb;
+}
+
+#box {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-color: black;
+  border-width: 10px;
+  width: 500px;
+  height: 500px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: justify;
+  padding-left: 90px;
+  font-weight: bold; 
+}
+#box img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+html {
+  scroll-behavior: none;
 }
