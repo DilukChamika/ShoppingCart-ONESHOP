@@ -16,10 +16,12 @@ if(!$_SESSION['auth']){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Manage Users</title>
+ 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Competible" content="ie=edge">
+  <title>ONE SHOP</title>
+  <link rel="shortcut icon" href="../../Assets/icon.png" />
   <link href="../../Styles/style.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -32,10 +34,10 @@ if(!$_SESSION['auth']){
 <div class="container-fluid">
     <div class="row" id="storeHead-admin">
         <div class="col-2 col-sm-2">
-                  <img src="../../Assets/ComIcon.jpg" alt="Company Logo" style="width: 64px; height: 64px;" class="companyLogo">
+                  <img src="../../Assets/icon.png" alt="Company Logo" style="width: 64px; height: 64px;" class="companyLogo">
         </div>
         <div class="col-8 col-sm-8">
-                  <h1 id="headerText">ADMINISTRATOR - <b>Manage Users</b></h1>
+                  <h1 id="headerText">Administrator  <span><b>Manage User</b></span></h1>
         </div>
         <div class="col-2 col-sm-2">
             <?php
@@ -55,7 +57,7 @@ if(!$_SESSION['auth']){
     </div>
     
     <div class="row"> 
-        <nav class="navbar navbar-expand-sm bg-primary-admin navbar-dark">
+        <nav class="navbar navbar-expand-sm bg-primary-admin navbar-white">
             <div class="container-fluid">
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#abc" aria-controls="abc" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="abc">
@@ -74,7 +76,8 @@ if(!$_SESSION['auth']){
             </div>
         </nav>
     </div>
-
+ <div id="tbl">
+  <table>
     <?php
 
     include ("../../config.php");
@@ -146,7 +149,7 @@ if(!$_SESSION['auth']){
                     ?>
                     <form action="manageusers.php" method="POST">
                         <input type="text" name="uID" value="<?php echo $uID; ?>" hidden>
-                        <button type="submit" name="deletebtn">Delete</button>
+                        <button type="submit" name="deletebtn" id="delbtn">Delete</button>
 
                     </form>
 
@@ -170,10 +173,11 @@ if(!$_SESSION['auth']){
 
 
     ?>
-
+  </table>
+</div>
     <br>
 
-    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal">Create Admin/User</button>
+    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" id="cBtn">Create New Admin/User</button>
     
  
   
@@ -205,11 +209,11 @@ if(!$_SESSION['auth']){
         <label for="username">Username:</label><br>
         <input type="text" id="username" name="username" required><br><br>
         <label for="avatar">Profile Picture:</label><br>
-        <input type="file" name="avatar"><br><br>
+        <input type="file" name="avatar" required><br><br>
         <label for="password">Password:</label><br>
         <input type="password" id="pword" name="password" required><br>
         <input type="checkbox" onclick="showPass()">Show Password <br><br>
-        <input type="submit" value="Submit" name="newAcc">
+        <input type="submit" value="Submit" id="subBtnAd" name="newAcc">
     </form>
       </div>
 
