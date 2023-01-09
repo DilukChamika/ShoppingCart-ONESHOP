@@ -195,40 +195,8 @@
   margin-right: 150px;
 }
 
+
+
 html {
   scroll-behavior: none;
-}
-/* manage admin/user */
-#subBtnAd {
-  background-color: #153cfb;
-  color: #ffffff;
-  width: 400px;
-  height: 40px;
-  border-color: #153cfb;
-  font-size: large;
-}
-
-#cBtn {
-  background-color: #ffffff;
-  color: #153cfb;
-  width: 500px;
-  height: 40px;
-  border-color: #153cfb;
-  font-size: large;
-  margin-left: 450px;
-}
-#tbl table{
-  background-color: red;
-  margin-top: 40px;
-  margin-left: 450px;
-  width: 500px;
-  background-color: #E9F3FF;
-  border: none;
-}
-#delbtn{
-  background-color: #153cfb;
-  color: #ffffff;
-  border-color: #153cfb;
-  margin-bottom: 4px;
-  margin-top: 4px;
 }
