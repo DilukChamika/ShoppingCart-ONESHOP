@@ -71,7 +71,7 @@
 			<a href="login.php"><input type="button" value="log In" id="logBtn"></a>
 		</form>
 	</div>
-	</center>
+</center>
 </body>
 
 <script>
