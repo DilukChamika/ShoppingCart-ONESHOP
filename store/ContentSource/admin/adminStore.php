@@ -35,7 +35,7 @@ if(!$_SESSION['auth']){
 
     <div class="row" id="storeHead-admin">
         <div class="col-2 col-sm-2">
-                  <img src="Assets/ComIcon.jpg" alt="Company Logo" style="width: 64px; height: 64px;" class="companyLogo">
+                  <img src="Assets/icon.png" alt="Company Logo" style="width: 52px; height: 52px;" class="companyLogo">
         </div>
         <div class="col-8 col-sm-8">
                   <h1 id="headerText">ADMINISTRATOR - <b>Product Store</b></h1>
@@ -60,7 +60,7 @@ if(!$_SESSION['auth']){
 
     
     <div class="row"> 
-        <nav class="navbar navbar-expand-sm bg-primary-admin navbar-dark">
+        <nav class="navbar navbar-expand-sm bg-primary-admin navbar-white">
             <div class="container-fluid">
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#abc" aria-controls="abc" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="abc">
