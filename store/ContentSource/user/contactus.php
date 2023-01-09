@@ -76,13 +76,40 @@ if(!$_SESSION['auth']){
         </nav>
     </div>
 
-
-
+    <div class="row"> 
     
+      <div class="contact-background">
+        <div class = "contact-bg">
+          <br>
+          <p><center><h3><b>Have questions about our products, features, or pricing?</b></h3><h4>Our teams will help you.</h4></center></p>
+          
+        </div>
+  
+        <br><br>
 
-    
+       
+        <div class = "contact-body">
 
-    <div class="row">
+          <table class="wp-table">
+            <tr>
+              <th><h4><b>Phone No</b></h4></th>
+              <th><h4><b>E-mail</b></h4></th>
+              <th><h4><b>Address</b></h4></th>
+            </tr>
+            <tr>
+              <td><h5>077 1234567</h5></td>
+              <td><h5>oneshop@gmail.com</h5></td>
+              <td><h5>No.20/B, Oneshop, Kelaniya.</h5></td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+      
+        <div class = "map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d31682.603057807737!2d79.891629!3d6.970886!3m2!1i1024!2i768!4f13.1!2m1!1sKelaniya!5e0!3m2!1sen!2slk!4v1673015478497!5m2!1sen!2slk" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+                  
         <div id="footer">
             <p> &#169; CART-D ICT DEPARTMENT 2023 </p>
             <p><small> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -93,7 +120,7 @@ if(!$_SESSION['auth']){
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small></p>
         </div>
         
-    </div>
+    
 
    
 
