@@ -17,10 +17,12 @@ if(!$_SESSION['auth']){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Contact Us</title>
+ 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Competible" content="ie=edge">
+  <title>ONE SHOP</title>
+  <link rel="shortcut icon" href="../../Assets/icon.png" />
   <link href="../../Styles/style.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -33,10 +35,10 @@ if(!$_SESSION['auth']){
 <div class="container-fluid">
     <div class="row" id="storeHead">
         <div class="col-2 col-sm-2">
-                  <img src="../../Assets/ComIcon.jpg" alt="Company Logo" style="width: 64px; height: 64px;" class="companyLogo">
+                  <img src="../../Assets/icon.png" alt="Company Logo" style="width: 52px; height: 52px;" class="companyLogo">
         </div>
         <div class="col-8 col-sm-8">
-                  <h1 id="headerText">CART-D<b> About Us</b></h1>
+                  <h1 id="headerText"><b> Contact Us</b></h1>
         </div>
         <div class="col-2 col-sm-2">
             <?php
@@ -51,12 +53,12 @@ if(!$_SESSION['auth']){
             //mysqli_close($conn);
 
             ?>
-                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='../../logout.php'> <small><u>LogOut</u></small></a> 
+                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='../../logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
         </div>
     </div>
     
     <div class="row"> 
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-white">
             <div class="container-fluid">
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#abc" aria-controls="abc" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="abc">
@@ -76,56 +78,55 @@ if(!$_SESSION['auth']){
         </nav>
     </div>
 
-    <div class="row"> 
+    <div class="row">
+
+<div class="contact-background">
+<div class = "contact-bg">
+<br>
+<p><center><h3><b>Have questions about our products, features, or pricing?</b></h3><h4>Our teams will help you.</h4></center></p>
+</div>
+
+
+<br><br>
+
+
+<div class = "contact-body">
+
+<table class="wp-table">
+<tr>
+<th><h4><b>Phone No</b></h4></th>
+<th><h4><b>E-mail</b></h4></th>
+<th><h4><b>Address</b></h4></th>
+</tr>
+<tr>
+<td><h5>077 1234567</h5></td>
+<td><h5>oneshop@gmail.com</h5></td>
+<td><h5>No.20/B, Oneshop, Kelaniya.</h5></td>
+</tr>
+</table>
+
+</div>
+</div>
+
+<div class = "map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d31682.603057807737!2d79.891629!3d6.970886!3m2!1i1024!2i768!4f13.1!2m1!1sKelaniya!5e0!3m2!1sen!2slk!4v1673015478497!5m2!1sen!2slk" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+
     
-      <div class="contact-background">
-        <div class = "contact-bg">
-          <br>
-          <p><center><h3><b>Have questions about our products, features, or pricing?</b></h3><h4>Our teams will help you.</h4></center></p>
+</div>
+    
+    <div class="row">
+        <div id="footer">
+            <p> &#169; 2023 ONE SHOP </p>
           
         </div>
-  
-        <br><br>
-
-       
-        <div class = "contact-body">
-
-          <table class="wp-table">
-            <tr>
-              <th><h4><b>Phone No</b></h4></th>
-              <th><h4><b>E-mail</b></h4></th>
-              <th><h4><b>Address</b></h4></th>
-            </tr>
-            <tr>
-              <td><h5>077 1234567</h5></td>
-              <td><h5>oneshop@gmail.com</h5></td>
-              <td><h5>No.20/B, Oneshop, Kelaniya.</h5></td>
-            </tr>
-          </table>
-
-        </div>
-      </div>
-      
-        <div class = "map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d31682.603057807737!2d79.891629!3d6.970886!3m2!1i1024!2i768!4f13.1!2m1!1sKelaniya!5e0!3m2!1sen!2slk!4v1673015478497!5m2!1sen!2slk" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-                  
-        <div id="footer">
-            <p> &#169; CART-D ICT DEPARTMENT 2023 </p>
-            <p><small> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small></p>
-        </div>
         
-    
+    </div>
 
    
 
   
-</div>
+
 
 </body>
 </html>
