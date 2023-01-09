@@ -1,50 +1,51 @@
 #storeHead{
     padding: 16px;
-    background: linear-gradient(to bottom, #3500D3, #190061);
-    color: white;
+    background: linear-gradient(to bottom, #153cfb, #153cfb);
+    color: #ffffff;
     text-align: center;
 }
 
 #storeHead-admin{
-    padding: 16px;
-    background: linear-gradient(to bottom, #f78c40, #0dd11d);
-    color: white;
+    padding: 4px;
+    background: linear-gradient(to bottom, #153cfb, #153cfb);
+    color: #ffffff;
     text-align: center;
 }
 
-#headerText{
-    text-shadow: 2px 2px 8px #FF0000;
+#storeHead-admin u{
+  color: #ffffff;
+}
+#headerText span{
+  text-shadow: 1px 1px 1px #0084ff;
 }
 
 .btn-primary{
-     background: linear-gradient(to left, #190061, #3500D3); 
-     border: 1px solid white;
+     background: linear-gradient(to left, #153cfb, #153cfb); 
+     border: 1px solid #ffffff;
 }
 
 
 .bg-primary-admin{
-    background: linear-gradient(to top, #d10dd1, #fa3463); 
+    background: linear-gradient(to top, #0577FF, #0577FF); 
 }
 
 .bg-primary{
-    background: linear-gradient(to top, #3500D3, blue); 
+    background: linear-gradient(to top, #0577FF, #0577FF); 
 }
 
 
  .nav-item>a:hover {
-            color: white;
-            background-color: black;
-            border-radius: 6px;
+            color: black;
+            background-color: #ffffff;
         }
  .active {
-            color: white;
-            background: linear-gradient(to bottom, #3500D3, black);   
-            border-radius: 6px;
+            color: black;
+            background-color: #ffffff;  
         }
 
 .nav-item>a{
     padding: 5px;
-    color: black;
+    color: #ffffff;
 
 }
 
@@ -195,4 +196,38 @@
 
 html {
   scroll-behavior: none;
+}
+/* manage admin/user */
+#subBtnAd {
+  background-color: #153cfb;
+  color: #ffffff;
+  width: 400px;
+  height: 40px;
+  border-color: #153cfb;
+  font-size: large;
+}
+
+#cBtn {
+  background-color: #ffffff;
+  color: #153cfb;
+  width: 500px;
+  height: 40px;
+  border-color: #153cfb;
+  font-size: large;
+  margin-left: 450px;
+}
+#tbl table{
+  background-color: red;
+  margin-top: 40px;
+  margin-left: 450px;
+  width: 500px;
+  background-color: #E9F3FF;
+  border: none;
+}
+#delbtn{
+  background-color: #153cfb;
+  color: #ffffff;
+  border-color: #153cfb;
+  margin-bottom: 4px;
+  margin-top: 4px;
 }
