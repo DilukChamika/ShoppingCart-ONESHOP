@@ -66,7 +66,7 @@ if($_POST){
       <br><img src=".\Assets\icon.png" /><br><br><br>
         <form action="#" method="POST">
           <label for="username">Username:</label><br>
-          <input type="text" id="username" name="username"><br>
+          <input type="text" id="username" name="username"><br><br>
           <label for="password">Password:</label><br>
           <input type="password" id="pword" name="password"><br>
           <input type="checkbox" onclick="showPass()">Show Password <br><br><br>
