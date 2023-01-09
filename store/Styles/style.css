@@ -191,3 +191,91 @@
 html {
   scroll-behavior: none;
 }
+
+.contact-background{
+  background: url("../Assets/Contact.jpg") no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+.wp-table th:first-child, 
+.wp-table td:first-child {
+    padding-left: 100px;
+}
+
+
+.wp-table td, 
+.wp-table th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+}
+
+.wp-table th {
+    font-weight: bold;
+}
+ 
+.wp-table {
+    font-size: 13px!important;
+    border: 0px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+}
+
+.products-section{
+  background: url("../Assets/bg.png") no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+.products-section h1{
+  text-align: center;
+  color: #ddd;
+}
+
+.border{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+
+.products-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.products-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.products-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+
+.products-form-btn{
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.products-form-btn:hover{
+  background: #2980b9;
+}
