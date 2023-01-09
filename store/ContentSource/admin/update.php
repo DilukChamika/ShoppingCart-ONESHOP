@@ -36,31 +36,74 @@ if(!$_SESSION['auth']){
 
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Competible" content="ie=edge">
+  <title>ONE SHOP</title>
+  <link rel="shortcut icon" href="../../Assets/icon.png" />
+  <link href="../../Styles/style.css" rel="stylesheet">
 
-    <div id="addItem">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row" id="storeHead-admin">
+        <div class="col-2 col-sm-2">
+                  <img src="../../Assets/icon.png" alt="Company Logo" style="width: 52px; height: 52px;" class="companyLogo">
+        </div>
+        <div class="col-8 col-sm-8">
+                  <h1 class="headerText"><span><b>Admin - Update Item</b></span></h1>
+        </div>
+        <div class="col-2 col-sm-2">
+            <?php
+            include("../../config.php");
+            $q1 = "SELECT avatarSrc FROM users WHERE userID = $userID";
+            $res = $conn->query($q1);
+
+                if ($res->num_rows > 0) {
+                  while($r = $res->fetch_assoc()) {
+                    $avatar1 = "../../Assets/profilePic/".$r["avatarSrc"];
+                }}
+            mysqli_close($conn);
+
+            ?>
+                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='../../logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
+        </div>
+    </div>
+    <center>
+    <div id="adminupdatediv">
         <form action="#" method="POST">
-          <label for="productname">Product Name:</label><br>
-          <input type="text" id="productname" name="productname" value="<?php echo $productName; ?>"><br>
+          <label for="productname"><b>Product Name:</b></label><br>
+          <input type="text" id="productname" class="addproform" name="productname" value="<?php echo $productName; ?>"><br><br>
 
-          <label for="productCategory">Product Category:</label><br>
-          <input type="text" id="productCategory" name="productCategory" value="<?php echo $productCate; ?>" ><br>
+          <label for="productCategory"><b>Product Category:</b></label><br>
+          <input type="text" id="productCategory" class="addproform" name="productCategory" value="<?php echo $productCate; ?>" ><br><br>
 
-          <label for="productDiscription">Product Discription:</label><br>
-          <input type="textarea" id="productDiscription" name="productDiscription" value=" <?php echo $productDis; ?>"><br>
+          <label for="productDiscription"><b> Discription:</b></label><br>
+          <textarea id="productDiscription" class="addproform" name="productDiscription"><?php echo $productDis; ?></textarea><br><br>
 
-          <label for="productPrice">Product Price:</label><br>
-          <input type="text" id="productPrice" name="productPrice" value="<?php echo $productPrice; ?>"><br>
+          <label for="productPrice"><b>Product Price:</b></label><br>
+          <input type="text" id="productPrice" class="addproform" name="productPrice" value="<?php echo $productPrice; ?>"><br><br>
 
-          <label for="productImgURL">Product Image URL:</label><br>
-          <input type="textbox" id="productImgURL" name="productImgURL" value="<?php echo $productImg; ?>"><br>
+          <label for="productImgURL"><b>Product Image URL:</b></label><br>
+          <textarea id="productImgURL" class="addproform" name="productImgURL" ><?php echo $productImg; ?></textarea><br><br>
 
 
           <br>
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" id="adminupdateitem">
         </form> 
-
-        <a href="../../index.php">Store </a>
+        <br>
+       
+        <button onclick= "document.location='../../index.php'" id="storelinkbtn">Product Store</button>
     </div>
+    </center>
 
 
     
@@ -82,7 +125,7 @@ if($_POST){
     $sql = "UPDATE `products` SET productName='$proName' , productCategory='$proCat', productDiscription='$proDis', productPrice='$proPrice', productImgSrc='$proImg' WHERE productID = '$productID' ";
 
     if ($conn->query($sql) === TRUE) {
-      echo "New record updated successfully";
+      echo "<script> alert ( 'New record updated successfully'); </script> ";
     } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
     }
