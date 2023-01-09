@@ -133,6 +133,7 @@
 .home {
   background-image: url("../Assets/bgpic.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 #username {
   width: 400px;
