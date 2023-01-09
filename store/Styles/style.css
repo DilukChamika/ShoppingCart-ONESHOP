@@ -153,6 +153,7 @@
   width: 400px;
   height: 40px;
   border-color: #153cfb;
+  font-size: large;
 }
 #createBtn {
   background-color: #ffffff;
@@ -160,6 +161,7 @@
   width: 400px;
   height: 40px;
   border-color: #153cfb;
+  font-size: large;
 }
 #logBtn {
   background-color: #ffffff;
@@ -167,6 +169,7 @@
   width: 400px;
   height: 40px;
   border-color: #153cfb;
+  font-size: large;
 }
 
 #box {
