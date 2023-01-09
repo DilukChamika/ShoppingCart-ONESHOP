@@ -76,31 +76,22 @@ if(!$_SESSION['auth']){
             </div>
         </nav>
     </div>
+    
+    <div class="row">
+    <div class="products-section">
 
-    <div id="addItem">
-        <form action="#" method="POST">
-          <label for="productname">Product Name:</label><br>
-          <input type="text" id="productname" name="productname" required><br>
-
-          <label for="productCategory">Product Category:</label><br>
-          <input type="text" id="productCategory" name="productCategory" required><br>
-
-          <label for="productDiscription">Product Discription:</label><br>
-          <input type="textarea" id="productDiscription" name="productDiscription" required><br>
-
-          <label for="productPrice">Product Price:</label><br>
-          <input type="text" id="productPrice" name="productPrice" required><br>
-
-          <label for="productImgURL">Product Image URL:</label><br>
-          <input type="textbox" id="productImgURL" name="productImgURL" required><br>
-
-
-          <br>
-          <input type="submit" value="Submit">
-        </form> 
+        <h1>Add Products</h1>
+        <div class="border"></div>
+        <form class="products-form" action="products.html" method="post">
+            <input type="text" class="products-form-text" placeholder="Product Name">
+            <input type="text" class="products-form-text" placeholder="Product Category">
+            <input type="text" class="products-form-text" placeholder="Product Description">
+            <input type="text" class="products-form-text" placeholder="Product Price">
+            <input type="text" class="products-form-text" placeholder="Product Image URL">
+            <input type="submit" class="products-form-btn" value="Submit">
+        </form>
     </div>
-
-
+    </div>
     
   
 </div>
