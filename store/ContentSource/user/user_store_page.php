@@ -15,10 +15,12 @@ if(!$_SESSION['auth']){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Store</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Competible" content="ie=edge">
+  <title>ONE SHOP</title>
+  <link rel="shortcut icon" href="../../Assets/icon.png" />
   <link href="Styles/style.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -32,10 +34,10 @@ if(!$_SESSION['auth']){
 <div class="container-fluid">
     <div class="row" id="storeHead">
         <div class="col-2 col-sm-2">
-                  <img src="Assets/ComIcon.jpg" alt="Company Logo" style="width: 64px; height: 64px;" class="companyLogo">
+                  <img src="Assets/icon.png" alt="Company Logo" style="width: 64px; height: 64px;" class="companyLogo">
         </div>
         <div class="col-8 col-sm-8">
-                  <h1 id="headerText">CART-D <b>Product Store</b></h1>
+                  <h1 class="headerText"><span><b>Product Store</b></span></h1>
         </div>
         <div class="col-2 col-sm-2">
             <?php
@@ -50,12 +52,12 @@ if(!$_SESSION['auth']){
             mysqli_close($conn);
 
             ?>
-                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='logout.php'> <small><u>LogOut</u></small></a> 
+                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
         </div>
     </div>
     
     <div class="row">   
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-white">
             <div class="container-fluid">
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#abc" aria-controls="abc" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="abc">
@@ -72,8 +74,8 @@ if(!$_SESSION['auth']){
                     </ul>
                 </div>
                 <form class="d-flex" method="POST" action="#">
-                    <input class="form-control me-2" id="userSearch" type="text" name="keyw" placeholder="Search">
-                    <button  type="submit" class="btn btn-primary" >Search</button>
+                    <input class="form-control me-2" id="userSearch" type="text" name="keyw" placeholder="Search" required>
+                    <button  type="submit" class="btn btn-primary" id="searchbtn">Search</button>
                 </form>
             </div>
         </nav>
@@ -120,7 +122,7 @@ if(!$_SESSION['auth']){
                     $result1 = $conn->query($sql1);
 
                     if($result1->num_rows > 0){
-                        echo "Already added!";
+                        echo "<h4 class ="."addedlbl".">Already added!</h4>";
                     }else{
                         echo "<div id=".$productID.">";
                         echo "<button  onClick= "."addToCART($productID)"." class="."Stbutton"." type="."submit"."><b>Add to Cart</b></button>";
@@ -154,15 +156,15 @@ if(!$_SESSION['auth']){
                     echo "<div class=" ."store" .">";
                     echo "<h3 class="."title".">" .$row["productName"] ."</h3>";
                     echo " <img src=$row[productImgSrc] height='120' width='auto'>";
-                    echo "<p class="."category".">" .$row["productCategory"] ."</p>";
+                    echo "<p style='color:#0577FF'class="."category"."><b>" .$row["productCategory"] ."</b></p>";
                     echo "<p>" .$row["productDiscription"] . "</p>";
-                    echo "<p class="."price".">LKR ".$row["productPrice"]. ".00</p>";
+                    echo "<p class="."price"."><b>LKR ".$row["productPrice"]. ".00</b></p>";
 
                     $sql1 = "SELECT productID, userID FROM usercart WHERE userID = '$userID' AND productID = '$productID' ";
                     $result1 = $conn->query($sql1);
 
                     if($result1->num_rows > 0){
-                        echo "Already added!";
+                        echo "<h4 class ="."addedlbl".">Already added!</h4>";
                     }else{
                         echo "<div id=".$productID.">";
                         echo "<button  onClick= "."addToCART($productID)"." class="."Stbutton"." type="."submit"."><b>Add to Cart</b></button>";
@@ -207,7 +209,7 @@ if(!$_SESSION['auth']){
                             }
                         });
 
-                        document.getElementById(pID).innerHTML = "Added to the System Now!";
+                        document.getElementById(pID).innerHTML = "<b>Added to the System Now!</b>";
                      }
 
 
@@ -219,17 +221,11 @@ if(!$_SESSION['auth']){
 
 
 
-
+<br><br>
 
     <div class="row">
         <div id="footer">
-            <p> &#169; CART-D ICT DEPARTMENT 2023 </p>
-            <p><small> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small></p>
+            <p> &#169; 2023 ONE SHOP </p>
         </div>
         
     </div>
