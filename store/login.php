@@ -48,18 +48,25 @@ if($_POST){
 ?>
 
 <html>
-    <body>
-    <form action="#" method="POST">
-  <label for="username">Username:</label><br>
-  <input type="text" id="username" name="username"><br>
-  <label for="password">Password:</label><br>
-  <input type="password" id="pword" name="password" ><br>
-  <input type="checkbox" onclick="showPass()">Show Password <br><br><br>
-  <input type="submit" value="Login">
-</form> 
-<a href="createuser.php">Create New Account </a>
-</body>
+<body class="home">
 
+  <center>
+    <div id="box">
+      <br><img src=".\Assets\icon.png" /><br><br><br>
+        <form action="#" method="POST">
+          <label for="username">Username:</label><br>
+          <input type="text" id="username" name="username"><br>
+          <label for="password">Password:</label><br>
+          <input type="password" id="pword" name="password"><br>
+          <input type="checkbox" onclick="showPass()">Show Password <br><br><br>
+          <input type="submit" value="Login" id="subBtn">
+        </form>
+        <a href="createuser.php"><input type="button" value="Create New Account" id="createBtn"></a>
+
+    </div>
+  </center>
+
+</body>
 <script>
 function showPass() {
   var x = document.getElementById("pword");
