@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Create User</title>
-</head>
-<body>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE SHOP</title>
+    <link rel="shortcut icon" href=".\Assets\icon.png" />
+    <link rel="stylesheet" href="Styles/style.css">
+  </head>
+
+<body class="home">
 	<?php
 	if($_POST){
 
@@ -55,21 +59,24 @@
 
 
 
-	<form action="#" method="POST" enctype="multipart/form-data">
-		<label for="username">Username:</label><br>
-	    <input type="text" id="username" name="username" required><br><br>
-	    <label for="avatar">Profile Picture:</label><br>
-	    <input type="file" name="avatar"><br><br>
-	    <label for="password">Password:</label><br>
-	    <input type="password" id="pword" name="password" required><br>
-	    <input type="checkbox" onclick="showPass()">Show Password <br><br><br>
-	    
-	    <input type="submit" value="Submit">
-	</form>
-
-	<br><br>
-
-	<a href="login.php">Log In </a>
+<center>
+  	<div id="box">  
+  		<br><img src=".\Assets\icon.png"/><br><br><br>
+	
+		<form action="#" method="POST" enctype="multipart/form-data">
+			<label for="username">Username:</label><br>
+	    	<input type="text" id="username" name="username" required><br><br>
+	    	<label for="avatar">Profile Picture:</label><br>
+	    	<input type="file" name="avatar"><br><br>
+	    	<label for="password">Password:</label><br>
+	    	<input type="password" id="pword" name="password" required><br>
+	    	<input type="checkbox" onclick="showPass()">Show Password <br><br>
+	    	<input type="submit" value="Submit" id="subBtn"><br><br>
+			<a href="login.php"><input type="button" value="log In" id="logBtn"></a>
+		</form>
+	</div>
+</center>
+</body>
 
 <script>
 function showPass() {
@@ -82,5 +89,4 @@ function showPass() {
 }
 </script>
 
-</body>
 </html>
