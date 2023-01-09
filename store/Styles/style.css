@@ -1,135 +1,160 @@
-#storeHead{
-    padding: 16px;
-    background: linear-gradient(to bottom, #153cfb, #153cfb);
-    color: #ffffff;
-    text-align: center;
+#storeHead {
+  padding: 16px;
+  background: linear-gradient(to bottom, #153cfb, #153cfb);
+  color: white;
+  text-align: center;
 }
 
-#storeHead-admin{
-    padding: 4px;
-    background: linear-gradient(to bottom, #153cfb, #153cfb);
-    color: #ffffff;
-    text-align: center;
+#storeHead-admin {
+  padding: 4px;
+  background: linear-gradient(to bottom, #153CFB, #153CFB);
+  color: #ffffff;
+  text-align: center;
+}
+.headerText span{
+  text-shadow: 2px 2px 2px black;
 }
 
-#storeHead-admin u{
+.btn-primary {
+  background: linear-gradient(to left, #153cfb, #153cfb);
+  border: 1px solid #ffffff;
+  border-radius: opx;
+}
+#searchbtn{
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+#adminsearchbtn{
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+#userSearch{
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+.bg-primary-admin {
+  background: linear-gradient(to top, #0577FF, #0577FF);
+}
+
+.bg-primary {
+  background: linear-gradient(to top, #0577FF, #0577FF);
+}
+
+.nav-item > a:hover {
+  color: black;
+  background-color: #ffffff;
+}
+.active {
+  color: black;
+  background-color: #ffffff;
+}
+.nav-item > a {
+  padding: 5px;
   color: #ffffff;
 }
-#headerText span{
-  text-shadow: 1px 1px 1px #0084ff;
+
+
+#stores {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
-.btn-primary{
-     background: linear-gradient(to left, #153cfb, #153cfb); 
-     border: 1px solid #ffffff;
+#stores-admin {
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
-
-.bg-primary-admin{
-    background: linear-gradient(to top, #0577FF, #0577FF); 
+.store {
+  color: black;
+  height: 96%;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  background: white;
+  box-shadow: 5px 5px lightsteelblue;
 }
 
-.bg-primary{
-    background: linear-gradient(to top, #0577FF, #0577FF); 
+.Stimages {
+  width: 100px;
+  height: auto;
 }
 
-
- .nav-item>a:hover {
-            color: black;
-            background-color: #ffffff;
-        }
- .active {
-            color: black;
-            background-color: #ffffff;  
-        }
-
-.nav-item>a{
-    padding: 5px;
-    color: #ffffff;
-
+.Stbutton {
+  background: #153cfb;
+  border: 2px solid #153cfb;
+  color: white;
+  height: 40px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+.addedlbl{
+  color: green;
 }
 
-#stores{
-    
-    background: white; 
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+#footer {
+  padding: 16px;
+  background: linear-gradient(to bottom, #153cfb, #153cfb);
+  color: white;
 }
 
-#stores-admin{
-    background: linear-gradient(to bottom, pink, #3500D3); 
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+#cart {
+  background-color: #ffffff;
 }
 
-.store{
-    color: black;
-    height: 96%;
-    border: 2px solid white;
-    border-radius: 6px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    background: white;
-    box-shadow: 5px 5px lightsteelblue; 
+.cartitem {
+  color: black;
+  height: 96%;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 5px 5px lightsteelblue;
 }
 
-.Stimages{
-    width: 100px;
-    height: auto;
+.paybutton {
+  background: #153cfb;
+  border: 2px solid #153cfb;
+  color: white;
+  height: 40px;
+  width: 120px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
 }
-
-.Stbutton{
-    background:  blue; 
-    border-radius: 6px;
-    border: 2px solid white;
-    color: white;
-    height: 40px;
+.rmvbutton {
+  background-color: #ffffff;
+  border: 2px solid #f30c0c;
+  color: #f30c0c;
+  height: 40px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
 }
-
-
-#footer{
-    padding: 16px;
-    background: linear-gradient(to bottom, #190061, blue); 
-    color: white;
-    
-}
-
-#cart{
-        background: linear-gradient(to bottom, #190061, blue); 
-
-}
-
-.cartitem{
-     color: white;
-    height: 96%;
-    border: 5px solid white;
-    border-radius: 6px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    background: linear-gradient(to bottom, #190061, #0C0032); 
-
-}
-
-.paybutton{
-    background: blue; 
-    border-radius: 6px;
-    border: 2px solid white;
-    color: yellow;
-    height: 40px;
-    width: 120px;
-}
-.rmvbutton{
-    background: linear-gradient(to bottom, blue, #190061); 
-    border-radius: 6px;
-    border: 2px solid white;
-    color: red;
-    height: 40px;
-}
-
 /* login and create user styles */
 
 .home {
@@ -182,7 +207,7 @@
   height: 500px;
   margin-top: 60px;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   text-align: justify;
   padding-left: 90px;
   font-weight: bold; 
@@ -195,8 +220,190 @@
   margin-right: 150px;
 }
 
-
-
 html {
   scroll-behavior: none;
 }
+/* manage admin/user */
+#subBtnAd {
+  background-color: #153cfb;
+  color: #ffffff;
+  width: 400px;
+  height: 40px;
+  border-color: #153cfb;
+  font-size: large;
+}
+
+#cBtn {
+  background-color: #ffffff;
+  color: #153cfb;
+  width: 500px;
+  height: 40px;
+  border-color: #153cfb;
+  font-size: large;
+  margin-left: 450px;
+}
+#tbl table{
+  background-color: red;
+  margin-top: 40px;
+  margin-left: 450px;
+  width: 500px;
+  background-color: #E9F3FF;
+  border: none;
+}
+#delbtn{
+  background-color: #153cfb;
+  color: #ffffff;
+  border-color: #153cfb;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+#productsub{
+  background-color: #153cfb;
+  color: #ffffff;
+  width: 400px;
+  height: 40px;
+  border-color: #153cfb;
+  font-size: large;
+}
+.addproform{
+  width: 400px;
+  height: 40px;
+  background-color: #d3f1f3;
+  border: none;
+}
+#addItem{
+  text-align: justify;
+  height: 500px;
+  width: 500px;
+}
+#adminupdateitem{
+  background-color: #153cfb;
+  color: #ffffff;
+  width: 400px;
+  height: 40px;
+  border-color: #153cfb;
+  font-size: large;
+}
+#productDiscription{
+  height: 100px;
+}
+#productImgURL{
+  height: 80px;
+}
+#adminupdatediv{
+  text-align: justify;
+  height: 500px;
+  width: 500px;
+}
+#productstorebtn{
+  background-color: #ffffff;
+  color: #153cfb;
+  width: 400px;
+  height: 40px;
+  border-color: #153cfb;
+  font-size: large;
+}
+#storelinkbtn{
+  background-color: #ffffff;
+  color: #153cfb;
+  width: 400px;
+  height: 40px;
+  border-color: #153cfb;
+  font-size: large;
+}
+/* contact us */
+
+.contact-background{
+  background: url("../Assets/contact.jpg") no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+  text-shadow: 1px 1px 5px #ffffff;
+  
+  }
+  .map{
+    background-color: #80c3d8;
+  }
+  
+  .wp-table th:first-child,
+  .wp-table td:first-child {
+  padding-left: 100px;
+  }
+  
+  
+  .wp-table td,
+  .wp-table th {
+  padding: 8px 8px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: top;
+  }
+  
+  .wp-table th {
+  font-weight: bold;
+  }
+  
+  .wp-table {
+  font-size: 13px!important;
+  border: 0px solid #ccc;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  }
+  
+  .products-section{
+  background: url("../Assets/bg.png") no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+  }
+  
+  .products-section h1{
+  text-align: center;
+  color: #ddd;
+  }
+  
+  .border{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+  }
+  
+  .products-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+  }
+  
+  .products-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+  }
+  .products-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+  }
+  
+  .products-form-btn{
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  }
+  .products-form-btn:hover{
+  background: #2980b9;
+  }
+  
+  
