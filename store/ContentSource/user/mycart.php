@@ -16,10 +16,12 @@ if(!$_SESSION['auth']){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>MyCart</title>
+ 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Competible" content="ie=edge">
+  <title>ONE SHOP</title>
+  <link rel="shortcut icon" href="../../Assets/icon.png" />
   <link href="../../Styles/style.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -32,10 +34,10 @@ if(!$_SESSION['auth']){
 <div class="container-fluid">
     <div class="row" id="storeHead">
         <div class="col-2 col-sm-2">
-                  <img src="../../Assets/ComIcon.jpg" alt="Company Logo" style="width: 64px; height: 64px;" class="companyLogo">
+                  <img src="../../Assets/icon.png" alt="Company Logo" style="width: 52px; height: 52px;" class="companyLogo">
         </div>
         <div class="col-8 col-sm-8">
-                  <h1 id="headerText">CART-D<b> My-Cart</b></h1>
+                  <h1 id="headerText"><b> My-Cart</b></h1>
         </div>
         <div class="col-2 col-sm-2">
             <?php
@@ -50,12 +52,12 @@ if(!$_SESSION['auth']){
             //mysqli_close($conn);
 
             ?>
-                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='../../logout.php'> <small><u>LogOut</u></small></a> 
+                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='../../logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
         </div>
     </div>
     
     <div class="row"> 
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-white">
             <div class="container-fluid">
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#abc" aria-controls="abc" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="abc">
@@ -103,9 +105,9 @@ if(!$_SESSION['auth']){
                             echo "<div class='cartitem' "."id=".$productID.">";
                             echo "<h3 class="."title".">" .$row2["productName"] ."</h3>";
                             echo "<img src=$row2[productImgSrc] height='120' width='auto'>";
-                            echo "<p class="."category".">" .$row2["productCategory"] ."</p>";
+                            echo "<p  style='color:#0577FF'class="."category"."><b>" .$row2["productCategory"] ."</b></p>";
                             echo "<p>" .$row2["productDiscription"] . "</p>";
-                            echo "<p class="."price".">LKR ".$row2["productPrice"]. ".00</p>";
+                            echo "<p class="."price"."><b>LKR ".$row2["productPrice"]. ".00</b></p>";
                             echo "<button class="."paybutton"."><b>Buy Now</b></button>";
                             echo " ";
                             echo "<button onClick= "."remFrmCART($productID) "." class="."rmvbutton"."><b>Remove</b></button>";
@@ -141,7 +143,7 @@ if(!$_SESSION['auth']){
 
                         });
 
-                        document.getElementById(pID).innerHTML = "Successfully Removed!";
+                        document.getElementById(pID).innerHTML = "<b>Successfully Removed!</b>";
 
                      }
                 
@@ -149,16 +151,11 @@ if(!$_SESSION['auth']){
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
     </div>
-
+<br><br>
     <div class="row">
         <div id="footer">
-            <p> &#169; CART-D ICT DEPARTMENT 2023 </p>
-            <p><small> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small></p>
+            <p> &#169; 2023 ONE SHOP </p>
+            
         </div>
         
     </div>
