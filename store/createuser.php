@@ -67,7 +67,7 @@
 			<label for="username">Username:</label><br>
 	    	<input type="text" id="username" name="username" required><br><br>
 	    	<label for="avatar">Profile Picture:</label><br>
-	    	<input type="file" name="avatar"><br><br>
+	    	<input type="file" name="avatar" required><br><br>
 	    	<label for="password">Password:</label><br>
 	    	<input type="password" id="pword" name="password" required><br>
 	    	<input type="checkbox" onclick="showPass()">Show Password <br><br>
