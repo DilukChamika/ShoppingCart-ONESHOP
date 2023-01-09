@@ -16,7 +16,6 @@ if(!$_SESSION['auth']){
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Competible" content="ie=edge">
@@ -37,7 +36,7 @@ if(!$_SESSION['auth']){
                   <img src="../../Assets/icon.png" alt="Company Logo" style="width: 52px; height: 52px;" class="companyLogo">
         </div>
         <div class="col-8 col-sm-8">
-                  <h1 id="headerText">Administrator  <span><b>Manage User</b></span></h1>
+                  <h1 class="headerText"><span><b>Admin - Manage User</b></span></h1>
         </div>
         <div class="col-2 col-sm-2">
             <?php
@@ -52,7 +51,7 @@ if(!$_SESSION['auth']){
             mysqli_close($conn);
 
             ?>
-                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='../../logout.php'> <small><u>LogOut</u></small></a> 
+                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='../../logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
         </div>
     </div>
     
@@ -76,7 +75,7 @@ if(!$_SESSION['auth']){
             </div>
         </nav>
     </div>
- <div id="tbl">
+<div id="tbl">
   <table>
     <?php
 
