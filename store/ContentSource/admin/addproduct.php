@@ -16,10 +16,12 @@ if(!$_SESSION['auth']){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Add Products</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Competible" content="ie=edge">
+  <title>ONE SHOP</title>
+  <link rel="shortcut icon" href="../../Assets/icon.png" />
   <link href="../../Styles/style.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -32,10 +34,10 @@ if(!$_SESSION['auth']){
 <div class="container-fluid">
     <div class="row" id="storeHead-admin">
         <div class="col-2 col-sm-2">
-                  <img src="../../Assets/ComIcon.jpg" alt="Company Logo" style="width: 64px; height: 64px;" class="companyLogo">
+                  <img src="../../Assets/icon.png" alt="Company Logo" style="width: 52px; height: 52px;" class="companyLogo">
         </div>
         <div class="col-8 col-sm-8">
-                  <h1 id="headerText">ADMINISTRATOR - <b>Add Product</b></h1>
+        <h1 class="headerText"><span><b>Admin - Add product</b></span></h1>
         </div>
         <div class="col-2 col-sm-2">
             <?php
@@ -51,12 +53,12 @@ if(!$_SESSION['auth']){
             mysqli_close($conn);
 
             ?>
-                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='../../logout.php'> <small><u>LogOut</u></small></a> 
+                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='../../logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
         </div>
     </div>
     
     <div class="row"> 
-        <nav class="navbar navbar-expand-sm bg-primary-admin navbar-dark">
+        <nav class="navbar navbar-expand-sm bg-primary-admin navbar-white">
             <div class="container-fluid">
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#abc" aria-controls="abc" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="abc">
@@ -76,22 +78,38 @@ if(!$_SESSION['auth']){
             </div>
         </nav>
     </div>
-    
-    <div class="row">
-    <div class="products-section">
 
-        <h1>Add Products</h1>
-        <div class="border"></div>
-        <form class="products-form" action="products.html" method="post">
-            <input type="text" class="products-form-text" placeholder="Product Name">
-            <input type="text" class="products-form-text" placeholder="Product Category">
-            <input type="text" class="products-form-text" placeholder="Product Description">
-            <input type="text" class="products-form-text" placeholder="Product Price">
-            <input type="text" class="products-form-text" placeholder="Product Image URL">
-            <input type="submit" class="products-form-btn" value="Submit">
-        </form>
+    <div class="row">
+    <center>    
+    <div id="addItem">
+        
+        <form action="#" method="POST">
+          <label for="productname" class="addprolbl"><b>Product Name:</b></label><br>
+          <input type="text" id="productname" class="addproform" name="productname" required><br>
+
+          <label for="productCategory" class="addprolbl"><b>Product Category:</b></label><br>
+          <input type="text" id="productCategory" class="addproform" name="productCategory" required><br>
+
+          <label for="productDiscription" class="addprolbl"><b>Product Discription:</b></label><br>
+          <textarea id="productDiscription" class="addproform" name="productDiscription" required></textarea><br>
+
+          <label for="productPrice" class="addprolbl"><b>Product Price:</b></label><br>
+          <input type="text" id="productPrice" class="addproform" name="productPrice" required><br>
+
+          <label for="productImgURL" class="addprolbl"><b>Product Image URL:</b></label><br>
+          <input type="textbox" id="productImgURL" class="addproform" name="productImgURL" required><br>
+
+
+          <br>
+          <input type="submit" value="Submit" id="productsub">
+        </form> 
+        
     </div>
+    </center>
     </div>
+
+
+
     
   
 </div>
