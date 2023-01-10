@@ -53,7 +53,7 @@ if(!$_SESSION['auth']){
             mysqli_close($conn);
 
             ?>
-                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
+                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><b><?php echo $userName; ?></b><br/><a href='logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
         </div>
     </div>
 
@@ -77,7 +77,7 @@ if(!$_SESSION['auth']){
                     </ul>
                 </div>
                 <form class="d-flex" method="POST" action="index.php">
-                    <input class="form-control me-2" id="userSearch" type="text" name="keyw" placeholder="Search">
+                    <input class="form-control me-2" id="userSearch" type="text" name="keyw" placeholder="Search" required>
                     <button  type="submit" class="btn btn-primary" id="adminsearchbtn">Search</button>
                 </form>
             </div>
@@ -92,7 +92,10 @@ if(!$_SESSION['auth']){
             if($_POST){
             ?>
                 <form action="index.php">
+                    <br>
+                    <center>
                     <button class="Stbutton" type="submit">Close The Search Results</button>
+                    </center>
                 </form>
 
             <?php
@@ -120,7 +123,7 @@ if(!$_SESSION['auth']){
 
                     echo "<button  onClick= "."updateItem($productID)"." class="."Stbutton"." type="."submit"."><b>Update</b></button>";
                     echo "  ";
-                    echo "<button  onClick= "."deleteItem($productID)"." class="."Stbutton"." type="."submit"."><b>Delete</b></button>";
+                    echo "<button  onClick= "."deleteItem($productID)"." class="."rmvbutton"." type="."submit"."><b>Delete</b></button>";
                         
                     echo "</div>";
                     echo "</div>";

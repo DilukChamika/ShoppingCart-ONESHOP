@@ -74,26 +74,27 @@ if(!$_SESSION['auth']){
             mysqli_close($conn);
 
             ?>
-                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='../../logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
+                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><b><?php echo $userName; ?></b><br/><a href='../../logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
         </div>
     </div>
     <center>
     <div id="adminupdatediv">
         <form action="#" method="POST">
+            <br>
           <label for="productname"><b>Product Name:</b></label><br>
-          <input type="text" id="productname" class="addproform" name="productname" value="<?php echo $productName; ?>"><br><br>
+          <input type="text" id="productname" class="addproform" name="productname" value="<?php echo $productName; ?>" required><br><br>
 
           <label for="productCategory"><b>Product Category:</b></label><br>
-          <input type="text" id="productCategory" class="addproform" name="productCategory" value="<?php echo $productCate; ?>" ><br><br>
+          <input type="text" id="productCategory" class="addproform" name="productCategory" value="<?php echo $productCate; ?>" required><br><br>
 
           <label for="productDiscription"><b> Discription:</b></label><br>
-          <textarea id="productDiscription" class="addproform" name="productDiscription"><?php echo $productDis; ?></textarea><br><br>
+          <textarea id="productDiscription" class="addproform" name="productDiscription" required><?php echo $productDis; ?></textarea><br><br>
 
           <label for="productPrice"><b>Product Price:</b></label><br>
-          <input type="text" id="productPrice" class="addproform" name="productPrice" value="<?php echo $productPrice; ?>"><br><br>
+          <input type="text" id="productPrice" class="addproform" name="productPrice" value="<?php echo $productPrice; ?>" required><br><br>
 
           <label for="productImgURL"><b>Product Image URL:</b></label><br>
-          <textarea id="productImgURL" class="addproform" name="productImgURL" ><?php echo $productImg; ?></textarea><br><br>
+          <textarea id="productImgURL" class="addproform" name="productImgURL" required><?php echo $productImg; ?></textarea><br><br>
 
 
           <br>
@@ -102,6 +103,7 @@ if(!$_SESSION['auth']){
         <br>
        
         <button onclick= "document.location='../../index.php'" id="storelinkbtn">Product Store</button>
+        <br><br>
     </div>
     </center>
 

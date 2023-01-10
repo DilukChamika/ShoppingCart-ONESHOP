@@ -53,7 +53,7 @@ if(!$_SESSION['auth']){
             mysqli_close($conn);
 
             ?>
-                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='../../logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
+                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><b><?php echo $userName; ?></b><br/><a href='../../logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
         </div>
     </div>
     
@@ -80,10 +80,12 @@ if(!$_SESSION['auth']){
     </div>
 
     <div class="row">
+        
     <center>    
     <div id="addItem">
         
         <form action="#" method="POST">
+            <br>
           <label for="productname" class="addprolbl"><b>Product Name:</b></label><br>
           <input type="text" id="productname" class="addproform" name="productname" required><br>
 
@@ -106,6 +108,7 @@ if(!$_SESSION['auth']){
         
     </div>
     </center>
+   
     </div>
 
 

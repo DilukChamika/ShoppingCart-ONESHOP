@@ -34,10 +34,10 @@ if(!$_SESSION['auth']){
 <div class="container-fluid">
     <div class="row" id="storeHead">
         <div class="col-2 col-sm-2">
-                  <img src="../../Assets/icon.png" alt="Company Logo" style="width: 52px; height: 52px;" class="companyLogo">
+                  <img src="../../Assets/icon.png" alt="Company Logo" style="width: 64px; height: 64px;" class="companyLogo">
         </div>
         <div class="col-8 col-sm-8">
-                  <h1 id="headerText"><b> My-Cart</b></h1>
+                  <h1 class="headerText"><span><b> My Cart</b></span></h1>
         </div>
         <div class="col-2 col-sm-2">
             <?php
@@ -52,7 +52,7 @@ if(!$_SESSION['auth']){
             //mysqli_close($conn);
 
             ?>
-                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='../../logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
+                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><b><?php echo $userName; ?></b><br/><a href='../../logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
         </div>
     </div>
     

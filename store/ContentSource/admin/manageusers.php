@@ -36,7 +36,7 @@ if(!$_SESSION['auth']){
                   <img src="../../Assets/icon.png" alt="Company Logo" style="width: 52px; height: 52px;" class="companyLogo">
         </div>
         <div class="col-8 col-sm-8">
-                  <h1 class="headerText"><span><b>Admin - Manage User</b></span></h1>
+                  <h1 class="headerText"><span><b>Admin - Manage Users</b></span></h1>
         </div>
         <div class="col-2 col-sm-2">
             <?php
@@ -51,7 +51,7 @@ if(!$_SESSION['auth']){
             mysqli_close($conn);
 
             ?>
-                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><?php echo $userName; ?><br/><a href='../../logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
+                <img src="<?php echo $avatar1; ?>" alt="Avatar Logo" style="width: 28px; height: 28px;" class="myicon rounded-pill "> <br/><b><?php echo $userName; ?></b><br/><a href='../../logout.php'> <small><u style="color:yellow">LogOut</u></small></a> 
         </div>
     </div>
     
@@ -129,11 +129,19 @@ if(!$_SESSION['auth']){
         }
 
     }
+    ?>
+    <br>
+    <center>
+      <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" id="cBtn"><b>Create New Admin/User</b></button>
+  </center>
+      <br><br>
+
+      <?php
 
            
         $sql = "SELECT * FROM users ";
         $result = $conn->query($sql);
-        echo "<table border='2'><tr><th>Username</th><th>Password</th><th>Delete</th></tr>";
+        echo "<table border='2' id='userdetails'><tr><th>Username</th><th>Password</th><th style='text-align:center'>Delete</th></tr>";
 
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
@@ -141,7 +149,7 @@ if(!$_SESSION['auth']){
                     echo "<tr>";
                     echo "<td>" . $row['username'] ."</td>";
                     echo "<td>" . $row['password'] ."</td>";
-                    echo "<td>";
+                    echo "<td style='text-align:center'>";
                     if($uID == $userID){
                         echo "You";
                     }else{
@@ -176,7 +184,7 @@ if(!$_SESSION['auth']){
 </div>
     <br>
 
-    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" id="cBtn">Create New Admin/User</button>
+  
     
  
   
@@ -185,7 +193,7 @@ if(!$_SESSION['auth']){
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-md">
     <div class="modal-content">
 
       <!-- Modal Header -->
@@ -199,20 +207,24 @@ if(!$_SESSION['auth']){
       <!-- Modal body -->
       <div class="modal-body">
        <form action="manageusers.php" method="POST" enctype="multipart/form-data">
-        <label for="role">Role: </label>
+        <center>
+          <div id="newadminmodal">
+        <label for="role"><b>Role: </b></label>
         <select name="role" id="role">
           <option value="user">User</option>
           <option value="admin">Admin</option>
         </select>
         <br><br>
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required><br><br>
-        <label for="avatar">Profile Picture:</label><br>
+        <label for="username"  class="addprolbl"><b>Username:</b></label><br>
+        <input type="text" id="username" name="username" class="addproform" required><br><br>
+        <label for="avatar"  class="addprolbl"><b>Profile Picture:</b></label><br>
         <input type="file" name="avatar" required><br><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="pword" name="password" required><br>
+        <label for="password"  class="addprolbl"><b>Password:</b></label><br>
+        <input type="password" id="pword" name="password" class="addproform" required><br>
         <input type="checkbox" onclick="showPass()">Show Password <br><br>
         <input type="submit" value="Submit" id="subBtnAd" name="newAcc">
+          </div>
+          </center>
     </form>
       </div>
 
