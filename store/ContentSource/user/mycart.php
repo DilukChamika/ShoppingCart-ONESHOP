@@ -148,10 +148,10 @@ if(!$_SESSION['auth']){
                      }
                 
             </script>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
     </div>
-<br><br>
+    <br><br>
     <div class="row">
         <div id="footer">
             <p> &#169; 2023 ONE SHOP </p>
