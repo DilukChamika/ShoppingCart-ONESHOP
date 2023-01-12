@@ -1,4 +1,4 @@
-# ShoppingCart-v2
+# ShoppingCart-ONESHOP
 
 steps
 
