@@ -1,14 +1,14 @@
 # ShoppingCart-ONESHOP
 
-steps
+<b><u>Steps</u></b>
 
-Imagine the host is localhost,
+When deploy using localhost,
 
 1. Create new database named 'productstore' .
 2. Import the productstore.sql to that database.
-3. Download and place the repo in localhost folder.
-4. Run the ShoppingCart-ONESHOP/store/ on localhost.
+3. Download and place the ShoppingCart-ONESHOP repostory folder in localhost.
+4. Run the ShoppingCart-ONESHOP/store/ on browser.
 
-Administrator username: admin password:1234 <br/>
-User username:user password:1234
+Administrator <b>username:</b>admin <b>password:</b>1234 <br/>
+User <b>username:</b>user ><b>password:</b>1234
 
