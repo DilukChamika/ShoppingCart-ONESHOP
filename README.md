@@ -9,6 +9,6 @@ When deploy using localhost,
 3. Download and place the ShoppingCart-ONESHOP repostory folder in localhost.
 4. Run the ShoppingCart-ONESHOP/store/ on browser.
 
-Administrator <b>username:</b>admin <b>password:</b>1234 <br/>
-User <b>username:</b>user ><b>password:</b>1234
+Administrator <b>username:</b> admin <b>password:</b> 1234 <br/>
+User <b>username:</b> user <b>password:</b> 1234
 
