@@ -234,7 +234,6 @@ if(!$_SESSION['auth']){
     </div>
 
    
-
   
 </div>
 
