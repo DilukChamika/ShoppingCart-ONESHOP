@@ -15,10 +15,10 @@ User <b>username:</b> user <b>password:</b> 1234
 
 <b>Our Team Members:</b>
 
-CT/2018/003 - https://github.com/praveenalessio
-CT/2018/009 - https://github.com/DilukChamika
-CT/2018/013 - https://github.com/Ishini0818
-CT/2018/025 - https://github.com/umesha-99
-CT/2018/055 - https://github.com/ImalshaRuwandini
-CT/2018/061 - https://github.com/KavinduMadusha
+CT/2018/003 - https://github.com/praveenalessio <br/>
+CT/2018/009 - https://github.com/DilukChamika <br/>
+CT/2018/013 - https://github.com/Ishini0818 <br/>
+CT/2018/025 - https://github.com/umesha-99 <br/>
+CT/2018/055 - https://github.com/ImalshaRuwandini <br/>
+CT/2018/061 - https://github.com/KavinduMadusha <br/>
 
