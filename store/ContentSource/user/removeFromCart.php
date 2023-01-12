@@ -27,5 +27,4 @@ if(!$_SESSION['auth']){
 }
 
 
-
 ?>
