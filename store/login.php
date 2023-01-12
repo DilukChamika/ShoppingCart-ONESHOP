@@ -44,7 +44,6 @@ if($_POST){
 
 }
 
-
 ?>
 
 <html>
@@ -88,6 +87,5 @@ function showPass() {
   }
 }
 </script>
-
 
 </html>
