@@ -1,8 +1,8 @@
 # ShoppingCart-ONESHOP
 
-This is a simple online shopping cart web application named as ONE SHOP. This has two types of users; administrators and users. Administrators can add/edit/delete product items from the store. And also they can manage user account, such as create new administrators and delete users. Users can search or scroll for the product items and add them to their cart. There are some another features in this online shopping cart also.
+This is a simple online shopping cart web application named as ONE SHOP. This has two types of users; administrators and users. Administrators have the ability to create more administrator accounts, create more user accounts, delete administrator accounts, delete user accounts, add products, edit products and delete products. Users have the ability to search or scroll for the products, add them to the cart, remove them from the cart, and go for buying process(payment gateway is not developed in this project). There are some another features in this online shopping cart such like user authorization and showing error messages.
 <br/>
-All the files are coded in php language with including html, css and javascript.
+All the files are coded in PHP language with including HTML, CSS and JavaScript. Bootstrap is used for keep responsiveness and jQuery is used for smooth page updating processes.
 <br/>
 
 
@@ -10,16 +10,18 @@ All the files are coded in php language with including html, css and javascript.
 
 When deploy using localhost,
 
-1. Create new database named 'productstore' .
-2. Import the productstore.sql to that database.
-3. Download and place the ShoppingCart-ONESHOP repostory folder in localhost.
-4. Run the ShoppingCart-ONESHOP/store/ on browser.
+1. Download the ShoppingCart-ONESHOP repostory folder.
+2. Create new database named 'productstore' in your server .
+3. Import the productstore.sql to that database.
+4. Place the ShoppingCart-ONESHOP repostory folder in localhost.
+5. Run the ShoppingCart-ONESHOP/store/ on browser.
 
-Administrator <b>username:</b> admin <b>password:</b> 1234 <br/>
-User <b>username:</b> user <b>password:</b> 1234
+<b>Default Credentials</b><br/>
+Administrator: <br/><b>username:</b> admin <b>password:</b> 1234 <br/>
+User: <br/><b>username:</b> user <b>password:</b> 1234
 <br/>
 <hr/><br/>
-Few screenshots of this web application:
+Few interfaces of this web application:
 <br/>
 
 ![FireShotCapture 067- 2023-08-01-20_07_02 http___localhost_store_login php](https://github.com/DilukChamika/ShoppingCart-ONESHOP/assets/103917677/98cddbc1-ebe1-45db-af51-e4be3f8b065f)
